@@ -1,6 +1,6 @@
 # Bank Data Cleaning & Analysis Using SQL
 
-A complete end-to-end SQL data cleaning project on a raw, unclean bank dataset — covering null handling, type corrections, data consistency, business rule enforcement, fraud detection, and customer analytics.
+A complete end-to-end SQL data cleaning project on a raw, unclean bank dataset - covering null handling, type corrections, data consistency, business rule enforcement, fraud detection, and customer analytics.
 
 ![MySQL](https://img.shields.io/badge/MySQL-00618A?style=for-the-badge&logo=mysql&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)
