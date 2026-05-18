@@ -17,7 +17,7 @@ This project takes a messy, real-world bank dataset and systematically cleans it
 
 | Key | Value |
 |-----|-------|
-| Database | BANKK (MySQL) |
+| Database | BANKKK (MySQL) |
 | Source Table | `bank unclean dataset` |
 | Working Table | `bank_staging` |
 | SQL Dialect | MySQL 8+ |
@@ -115,16 +115,6 @@ WHERE ABS(Transaction_Amount) > 100000
 - **High-risk identification** — customers with Credit Score <580, KYC Pending/Rejected, Loan Rejected, or Inactive/Closed account
 - **Branch performance** — total customers, total balance (`SUM`), and approved loan count per branch, ordered by balance `DESC`
 
----
-
-## 🗃️ Repository Structure
-bank-data-cleaning/
-
-├── BANKK.sql        ← full SQL script (cleaning + analysis)
-
-└── README.md        ← this file
-
----
 
 ## 🚀 How to Run
 
