@@ -121,7 +121,9 @@ WHERE ABS(Transaction_Amount) > 100000
 
 ## 🗃️ Repository Structure
 bank-data-cleaning/
+
 ├── BANKK.sql        ← full SQL script (cleaning + analysis)
+
 └── README.md        ← this file
 
 ---
