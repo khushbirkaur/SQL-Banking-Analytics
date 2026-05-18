@@ -36,18 +36,18 @@ SET SQL_SAFE_UPDATES = 0;
 -- ============================================================
 
 SELECT
-    COUNT(*)                                                                         AS Total_Rows,
-    SUM(CASE WHEN Account_ID IS NULL OR Account_ID = ''           THEN 1 ELSE 0 END) AS Null_Account_IDs,
-    SUM(CASE WHEN Customer_Name IS NULL OR Customer_Name = ''     THEN 1 ELSE 0 END) AS Null_Customer_Names,
-    SUM(CASE WHEN Age IS NULL                                     THEN 1 ELSE 0 END) AS Null_Ages,
-    SUM(CASE WHEN Gender IS NULL OR Gender = ''                   THEN 1 ELSE 0 END) AS Null_Genders,
-    SUM(CASE WHEN Account_Type IS NULL OR Account_Type = ''       THEN 1 ELSE 0 END) AS Null_Account_Types,
-    SUM(CASE WHEN Branch IS NULL OR Branch = ''                   THEN 1 ELSE 0 END) AS Null_Branches,
-    SUM(CASE WHEN IFSC_Code IS NULL OR IFSC_Code = ''             THEN 1 ELSE 0 END) AS Null_IFSC_Codes,
+    COUNT(*) AS Total_Rows,
+    SUM(CASE WHEN Account_ID IS NULL OR Account_ID = ''  THEN 1 ELSE 0 END) AS Null_Account_IDs,
+    SUM(CASE WHEN Customer_Name IS NULL OR Customer_Name = '' THEN 1 ELSE 0 END) AS Null_Customer_Names,
+    SUM(CASE WHEN Age IS NULL THEN 1 ELSE 0 END) AS Null_Ages,
+    SUM(CASE WHEN Gender IS NULL OR Gender = ''  THEN 1 ELSE 0 END) AS Null_Genders,
+    SUM(CASE WHEN Account_Type IS NULL OR Account_Type = '' THEN 1 ELSE 0 END) AS Null_Account_Types,
+    SUM(CASE WHEN Branch IS NULL OR Branch = '' THEN 1 ELSE 0 END) AS Null_Branches,
+    SUM(CASE WHEN IFSC_Code IS NULL OR IFSC_Code = '' THEN 1 ELSE 0 END) AS Null_IFSC_Codes,
     SUM(CASE WHEN Transaction_Type IS NULL OR Transaction_Type='' THEN 1 ELSE 0 END) AS Null_Transaction_Types,
-    SUM(CASE WHEN Loan_Status IS NULL OR Loan_Status = ''         THEN 1 ELSE 0 END) AS Null_Loan_Statuses,
-    SUM(CASE WHEN KYC_Status IS NULL OR KYC_Status = ''           THEN 1 ELSE 0 END) AS Null_KYC_Statuses,
-    SUM(CASE WHEN Account_Status IS NULL OR Account_Status = ''   THEN 1 ELSE 0 END) AS Null_Account_Statuses
+    SUM(CASE WHEN Loan_Status IS NULL OR Loan_Status = ''  THEN 1 ELSE 0 END) AS Null_Loan_Statuses,
+    SUM(CASE WHEN KYC_Status IS NULL OR KYC_Status = '' THEN 1 ELSE 0 END) AS Null_KYC_Statuses,
+    SUM(CASE WHEN Account_Status IS NULL OR Account_Status = '' THEN 1 ELSE 0 END) AS Null_Account_Statuses
 FROM bank_staging;
 
 -- ============================================================
