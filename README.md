@@ -1,6 +1,4 @@
-# SQL-Banking-Analytics
-
-# 🏦 Bank Data Cleaning & Analysis
+# Bank Data Cleaning & Analysis Using SQL
 
 A complete end-to-end SQL data cleaning project on a raw, unclean bank dataset — covering null handling, type corrections, data consistency, business rule enforcement, fraud detection, and customer analytics.
 
