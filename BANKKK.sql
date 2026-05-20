@@ -84,16 +84,16 @@ FROM bank_staging;
 -- ------------------------------------------------------------
 UPDATE bank_staging
 SET
-    Account_ID       = TRIM(Account_ID),
-    Customer_Name    = TRIM(Customer_Name),
-    Gender           = TRIM(Gender),
-    Account_Type     = TRIM(Account_Type),
+    Account_ID = TRIM(Account_ID),
+    Customer_Name = TRIM(Customer_Name),
+    Gender = TRIM(Gender),
+    Account_Type = TRIM(Account_Type),
     Transaction_Type = TRIM(Transaction_Type),
-    Branch           = TRIM(Branch),
-    IFSC_Code        = TRIM(IFSC_Code),
-    Loan_Status      = TRIM(Loan_Status),
-    KYC_Status       = TRIM(KYC_Status),
-    Account_Status   = TRIM(Account_Status);
+    Branch = TRIM(Branch),
+    IFSC_Code = TRIM(IFSC_Code),
+    Loan_Status = TRIM(Loan_Status),
+    KYC_Status = TRIM(KYC_Status),
+    Account_Status = TRIM(Account_Status);
 
 -- ------------------------------------------------------------
 -- STEP 3: HANDLING MISSING CUSTOMER NAME
